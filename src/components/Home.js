@@ -1,15 +1,16 @@
-import React from 'react';
+import React from "react";
 import PropTypes from "prop-types";
 
-class Home extends React.Component  {
-  static propTypes = {
-    screen: PropTypes.string
-  };
+class Home extends React.Component {
+  static propTypes = {};
 
   render() {
     return (
       <div className="Home">
-{'home'}
+        <button onClick={this.props.getPracticeQuiz}>
+          Take the Practice Quiz
+        </button>
+        {"home"}
       </div>
     );
   }
